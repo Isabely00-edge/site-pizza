@@ -9,6 +9,83 @@ html {
 body{
     margin: 0;
     color: #db5d72;
-    background-color: rgb(255, 255, 255);
+    background-color: #f6f6f6(225, 225, 225);
     line-height: 1.6;
+}
+
+.topbar {
+    position: sticky;
+    top:0;
+    z-index: 10;
+    background-color: rgb(245, 239, 239);
+    border-bottom: 8px solid #db5d72;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 800;
+    text-decoration: none;
+    color: #db5d72;
+    font-size: 1.5rem;
+    padding: 0.8rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(226, 199, 163);
+    padding: 0.6rem 0.8rem;
+    border-color: #f6f6f6;
+}
+
+nav a:hover {
+    background-color: #f6f6f6;
+}
+
+section {
+    padding: 3rem 0;
+    scroll-margin-top: 4rem;
+}
+
+section h2 {
+    margin-bottom: 0.4rem;
+    font-size: 1.8rem 
+}
+
+.section-subtitle,
+.hero p {
+    color: rgb(219, 198, 169);
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    margin-bottom: 0.4rem;
+    font-size: 2.2rem;
+}
+
+.hero-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.hero-text {
+    min-width: 16rem;
+}
+
+
+.hero-img img {
+    width: 100%;
+    display: block;
+    border-radius: 0.5rem;
 }
