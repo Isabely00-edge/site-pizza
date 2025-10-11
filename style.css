@@ -19,6 +19,7 @@ body{
     z-index: 10;
     background-color: rgb(245, 239, 239);
     border-bottom: 8px solid #db5d72;
+    
 }
 
 .container {
@@ -42,9 +43,10 @@ body{
 
 nav a {
     text-decoration: none;
-    color: rgb(226, 199, 163);
+    color: rgb(199, 169, 129);
     padding: 0.6rem 0.8rem;
     border-color: #f6f6f6;
+    font-weight: bolder;
 }
 
 nav a:hover {
@@ -52,8 +54,14 @@ nav a:hover {
 }
 
 section {
-    padding: 3rem 0;
+    padding: 3rem;
     scroll-margin-top: 4rem;
+    
+}
+
+.section-margin{
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 section h2 {
@@ -80,12 +88,117 @@ section h2 {
 }
 
 .hero-text {
-    min-width: 16rem;
+    max-width: 45%;
+}
+
+.hero-img {
+    max-width: 45%;
+    border: 1px;
+    border-radius: 0.8rem;
+    padding: 0.6rem;
 }
 
 
 .hero-img img {
-    width: 100%;
+    max-width: 100%;
     display: block;
     border-radius: 0.5rem;
+}
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.item {
+    flex-basis: 360px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    padding: 13px;
+    border: 1px solid #db5d72;
+}
+
+.thumb {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow-x: hidden;
+}
+
+.thumb img{
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+}
+
+.thumb img:hover {
+    transform: scale(1.08) rotate(-1deg);
+}
+
+.price:hover {
+    color: aliceblue;
+    background-color: #e48e9c;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.contact grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start
+}
+
+.contact-grid > div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 320px;
+    min-width: 260px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 520px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 500;
+}
+
+input, textarea {
+    font: inherit;
+    padding: 13px 14px 13px 14px;
+    border: 1.5px solid #e48e9c;
+    border-radius: 10px;
+    background-color: #fac8d1;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border: 2px dotted #db5d72;
+    box-shadow: 0px 0px 0px 10px #0000 
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgb(255, 239, 239);
+    color: black;
+    padding: 13px 16px 13px 16px;
+    text-decoration: none;
+    border: 0px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(1.15);
 }
