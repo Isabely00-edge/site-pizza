@@ -147,7 +147,7 @@ section h2 {
     border-radius: 10px;
 }
 
-.contact grid {
+.contact-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
